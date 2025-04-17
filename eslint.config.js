@@ -1,4 +1,3 @@
-import globals from 'globals';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { FlatCompat } from '@eslint/eslintrc';
@@ -12,14 +11,19 @@ const compat = new FlatCompat({
 });
 
 export default [
+  ...compat.extends('airbnb-base'),
   {
-    languageOptions: {
-      globals: globals.node,
-    },
     rules: {
+      'import/extensions': [
+        'error',
+        {
+          js: 'always',
+        },
+      ],
+      'import/no-named-as-default': 'off',
+      'import/no-named-as-default-member': 'off',
       'no-console': 'off',
-      'import/extensions': 'off',
+      'import/no-extraneous-dependencies': 'off',
     },
   },
-  ...compat.extends('airbnb'),
 ];
