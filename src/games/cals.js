@@ -6,8 +6,8 @@ export default () => {
 
   const generateRound = () => {
     const operators = ['+', '-', '*'];
-    const a = randomNum(10);
-    const b = randomNum(10);
+    const a = randomNum(1, 10);
+    const b = randomNum(1, 10);
     const operator = operators[Math.floor(Math.random() * operators.length)];
     const calculate = {
       '+': (x, y) => x + y,

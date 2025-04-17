@@ -5,9 +5,9 @@ export default () => {
   console.log('What number is missing in the progression?');
 
   const generateRound = () => {
-    const num = randomNum(50);
-    const interval = randomNum(5);
-    const corrIndex = randomNum(10);
+    const num = randomNum(1, 50);
+    const interval = randomNum(1, 5);
+    const corrIndex = randomNum(0, 10);
     let currNum = num;
     const progression = [];
     for (let i = 0; i < 10; i += 1) {

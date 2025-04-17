@@ -7,7 +7,7 @@ const greetingUser = () => {
   return name;
 };
 
-const randomNum = (n) => Math.floor(Math.random() * n);
+const randomNum = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
 
 const engine = (userName, generateRound) => {
   for (let i = 0; i < 3; i += 1) {
