@@ -9,6 +9,15 @@ const greetingUser = () => {
 
 const randomNum = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
 
+const isPrime = (n) => {
+  if (n % 2 === 0 && n > 2) return false;
+  const s = Math.sqrt(n);
+  for (let i = 3; i <= s; i += 2) {
+    if (n % i === 0) return false;
+  }
+  return true;
+};
+
 const engine = (userName, generateRound) => {
   for (let i = 0; i < 3; i += 1) {
     const { question, answer } = generateRound();
@@ -24,4 +33,6 @@ const engine = (userName, generateRound) => {
   console.log(`Congratulations, ${userName}!`);
 };
 
-export { greetingUser, randomNum, engine };
+export {
+  greetingUser, randomNum, engine, isPrime,
+};
