@@ -14,11 +14,11 @@ export default () => {
       progression.push(currNum);
       currNum += interval;
     }
-    const copyProgression = [...progression];
-    progression.splice(corrIndex, 1, '..');
+    const corrAnswer = progression[corrIndex];
+    progression[corrIndex] = '..';
     return {
       question: progression.join(' '),
-      answer: copyProgression[corrIndex].toString(),
+      answer: corrAnswer.toString(),
     };
   };
 
