@@ -1,4 +1,5 @@
-import { randomNum, engine } from '../index.js';
+import engine from '../index.js';
+import { randomNum } from '../utils.js';
 
 export default () => {
   const rule = 'What number is missing in the progression?';

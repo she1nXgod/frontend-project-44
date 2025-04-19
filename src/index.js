@@ -1,17 +1,6 @@
 import readlineSync from 'readline-sync';
 
-const randomNum = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
-
-const isPrime = (n) => {
-  if (n % 2 === 0 && n > 2) return false;
-  const s = Math.sqrt(n);
-  for (let i = 3; i <= s; i += 2) {
-    if (n % i === 0) return false;
-  }
-  return true;
-};
-
-const engine = (gameRule, generateRound) => {
+export default (gameRule, generateRound) => {
   console.log('Welcome to the Brain Games!');
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!`);
@@ -29,5 +18,3 @@ const engine = (gameRule, generateRound) => {
   }
   console.log(`Congratulations, ${name}!`);
 };
-
-export { randomNum, engine, isPrime };
