@@ -7,8 +7,11 @@
 
 ### Five simple math games that run in the terminal.
 
-#### Rules
+#### Requirements
+  * Node.js 14+
+  * Windows/macOS/Linux
 
+#### Rules
 Each game follows the same pattern:
 
 - 3 rounds of questions
