@@ -1,8 +1,7 @@
-import { greetingUser, randomNum, engine } from '../index.js';
+import { randomNum, engine } from '../index.js';
 
 export default () => {
-  const userName = greetingUser();
-  console.log('What number is missing in the progression?');
+  const rule = 'What number is missing in the progression?';
 
   const generateRound = () => {
     const num = randomNum(1, 50);
@@ -22,5 +21,5 @@ export default () => {
     };
   };
 
-  engine(userName, generateRound);
+  engine(rule, generateRound);
 };

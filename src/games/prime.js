@@ -1,10 +1,7 @@
-import {
-  greetingUser, randomNum, engine, isPrime,
-} from '../index.js';
+import { randomNum, engine, isPrime } from '../index.js';
 
 export default () => {
-  const userName = greetingUser();
-  console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
+  const rule = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
   const generateRound = () => {
     const num = randomNum(2, 100);
@@ -14,5 +11,5 @@ export default () => {
     };
   };
 
-  engine(userName, generateRound);
+  engine(rule, generateRound);
 };

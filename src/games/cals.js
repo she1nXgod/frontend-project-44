@@ -1,8 +1,7 @@
-import { greetingUser, randomNum, engine } from '../index.js';
+import { randomNum, engine } from '../index.js';
 
 export default () => {
-  const userName = greetingUser();
-  console.log('What is the result of the expression?');
+  const rule = 'What is the result of the expression?';
 
   const generateRound = () => {
     const operators = ['+', '-', '*'];
@@ -20,5 +19,5 @@ export default () => {
     };
   };
 
-  engine(userName, generateRound);
+  engine(rule, generateRound);
 };

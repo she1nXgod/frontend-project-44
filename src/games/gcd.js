@@ -1,8 +1,7 @@
-import { greetingUser, randomNum, engine } from '../index.js';
+import { randomNum, engine } from '../index.js';
 
 export default () => {
-  const userName = greetingUser();
-  console.log('Find the greatest common divisor of given numbers.');
+  const rule = 'Find the greatest common divisor of given numbers.';
 
   const generateRound = () => {
     const a = randomNum(1, 100);
@@ -18,5 +17,5 @@ export default () => {
     return false;
   };
 
-  engine(userName, generateRound);
+  engine(rule, generateRound);
 };
