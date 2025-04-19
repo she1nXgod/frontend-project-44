@@ -7,7 +7,7 @@ export default () => {
   const generateRound = () => {
     const num = randomNum(1, 50);
     const interval = randomNum(1, 5);
-    const corrIndex = randomNum(0, 10);
+    const corrIndex = randomNum(0, 9);
     let currNum = num;
     const progression = [];
     for (let i = 0; i < 10; i += 1) {
