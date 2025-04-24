@@ -10,7 +10,8 @@ export default () => {
     const corrIndex = randomNum(0, 9);
     let currNum = num;
     const progression = [];
-    for (let i = 0; i < 10; i += 1) {
+    const rounds = 10;
+    for (let i = 0; i < rounds; i += 1) {
       progression.push(currNum);
       currNum += interval;
     }

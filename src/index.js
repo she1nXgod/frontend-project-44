@@ -5,7 +5,8 @@ export default (gameRule, generateRound) => {
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!`);
   console.log(gameRule);
-  for (let i = 0; i < 3; i += 1) {
+  const rounds = 3;
+  for (let i = 0; i < rounds; i += 1) {
     const { question, answer } = generateRound();
     console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
