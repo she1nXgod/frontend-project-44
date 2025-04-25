@@ -1,7 +1,5 @@
 ## Terminal Brain Games
 
-### Hexlet tests and linter status:
-
 [![Maintainability](https://api.codeclimate.com/v1/badges/f323602b9d1074936a3e/maintainability)](https://codeclimate.com/github/she1nXgod/frontend-project-44/maintainability)
 
 ### Five simple math games that run in the terminal.
