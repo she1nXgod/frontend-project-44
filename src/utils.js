@@ -1,5 +1,7 @@
 const randomNum = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
 
+const isEven = (n) => n % 2 === 0;
+
 const isPrime = (n) => {
   if (n % 2 === 0 && n > 2) return false;
   const s = Math.sqrt(n);
@@ -9,4 +11,4 @@ const isPrime = (n) => {
   return true;
 };
 
-export { randomNum, isPrime };
+export { randomNum, isEven, isPrime };

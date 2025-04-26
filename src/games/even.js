@@ -1,5 +1,5 @@
 import engine from '../index.js';
-import { randomNum } from '../utils.js';
+import { randomNum, isEven } from '../utils.js';
 
 export default () => {
   const rule = 'Answer "yes" if the number is even, otherwise answer "no".';
@@ -8,7 +8,7 @@ export default () => {
     const num = randomNum(1, 100);
     return {
       question: num,
-      answer: num % 2 === 0 ? 'yes' : 'no',
+      answer: isEven(num) ? 'yes' : 'no',
     };
   };
 
